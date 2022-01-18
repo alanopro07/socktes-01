@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 
 
-const server = new Server();
+const server = Server.instance;
 
 // parseo de la resppuesta del body
 server.app.use(bodyParser.urlencoded({ extended: true })); // nuevo middleware
